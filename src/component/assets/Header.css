@@ -1,16 +1,15 @@
 .menu{
     display: none;
-      justify-content: space-between;
-      background-color: #F3764A;
-      border-top-left-radius: 5px;
-      border-top-right-radius: 5px;
 }
 .bigMenu{
     display: flex;
-    justify-content: space-between;
-    background-color: #F3764A;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+}
+.menu, .bigMenu{
+ justify-content: space-between;
+ background-color: #F3764A;
+ border-top-left-radius: 5px;
+ border-top-right-radius: 5px;
+
 }
 
 .bigMenu h5{
