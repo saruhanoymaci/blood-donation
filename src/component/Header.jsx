@@ -10,6 +10,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import "./assets/Header.css"
 import MenuRoundedIcon from '@material-ui/icons/MenuRounded';
 import Logo from "./assets/logo.jpg"
+import {Link} from "react-router-dom"
 
 
 const useStyles = makeStyles({
@@ -79,10 +80,10 @@ export default function SwipeableTemporaryDrawer() {
       </div>
       <div className="bigMenu">
          
-          <h5>Donation</h5>
-          <h5>Search</h5>
-          <h5>Sign Up</h5>
-          <h5>Login</h5>
+        <Link to="/"> <h5>Donation</h5> </Link>  
+        <Link to="/search"> <h5>Search</h5> </Link>  
+        <Link to="/signup"> <h5>Sign Up</h5> </Link> 
+        <Link to="/login">  <h5>Login</h5></Link>  
        
           
          <img src={Logo} alt="logo"/>
