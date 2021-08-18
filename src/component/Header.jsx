@@ -10,7 +10,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import "./assets/Header.css"
 import MenuRoundedIcon from '@material-ui/icons/MenuRounded';
 import Logo from "./assets/logo.jpg"
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom"
 
 
 const useStyles = makeStyles({
@@ -25,9 +25,9 @@ const useStyles = makeStyles({
 export default function SwipeableTemporaryDrawer() {
   const classes = useStyles();
   const [state, setState] = React.useState({
-   
+
     left: false,
-   
+
   });
 
   const toggleDrawer = (anchor, open) => (event) => {
@@ -50,45 +50,45 @@ export default function SwipeableTemporaryDrawer() {
       <List>
         {['Donation', 'Search', 'Sign Up', 'Login'].map((text) => (
           <ListItem button key={text}>
-         
+
             <ListItemText primary={text} />
           </ListItem>
         ))}
       </List>
       <Divider />
-   
+
     </div>
   );
 
   return (
     <div className="header">
-        <div className="menu">
-      {['left'].map((anchor) => (
-        <React.Fragment key={anchor}>
-          <Button onClick={toggleDrawer(anchor, true)}><MenuRoundedIcon fontSize="large"/></Button>
-          <SwipeableDrawer
-            anchor={anchor}
-            open={state[anchor]}
-            onClose={toggleDrawer(anchor, false)}
-            onOpen={toggleDrawer(anchor, true)}
-          >
-            {list(anchor)}
-          </SwipeableDrawer>
-        </React.Fragment>
-      ))}
-          <img src={Logo} alt="logo"/>
+      <div className="menu">
+        {['left'].map((anchor) => (
+          <React.Fragment key={anchor}>
+            <Button onClick={toggleDrawer(anchor, true)}><MenuRoundedIcon fontSize="large" /></Button>
+            <SwipeableDrawer
+              anchor={anchor}
+              open={state[anchor]}
+              onClose={toggleDrawer(anchor, false)}
+              onOpen={toggleDrawer(anchor, true)}
+            >
+              {list(anchor)}
+            </SwipeableDrawer>
+          </React.Fragment>
+        ))}
+        <img src={Logo} alt="logo" />
       </div>
       <div className="bigMenu">
-         
-        <Link to="/"> <h5>Donation</h5> </Link>  
-        <Link to="/search"> <h5>Search</h5> </Link>  
-        <Link to="/signup"> <h5>Sign Up</h5> </Link> 
-        <Link to="/login">  <h5>Login</h5></Link>  
-       
-          
-         <img src={Logo} alt="logo"/>
+
+        <Link to="/"> <h5>Donation</h5> </Link>
+        <Link to="/search"> <h5>Search</h5> </Link>
+        <Link to="/signup"> <h5>Sign Up</h5> </Link>
+        <Link to="/login">  <h5>Login</h5></Link>
+
+
+        <img src={Logo} alt="logo" />
       </div>
-     
+
 
 
 
