@@ -1,2 +1,10 @@
 
-
+.cust-contain{
+ margin: 8vh auto;
+  
+  max-height: 600px;
+  height:110vh;
+ max-width: 800px;
+  border: 1px solid black;
+  border-radius: 3px;
+}
