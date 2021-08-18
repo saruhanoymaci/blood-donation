@@ -9,6 +9,7 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import "./assets/Header.css"
 import MenuRoundedIcon from '@material-ui/icons/MenuRounded';
+import Logo from "./assets/logo.jpg"
 
 
 const useStyles = makeStyles({
@@ -60,6 +61,7 @@ export default function SwipeableTemporaryDrawer() {
 
   return (
     <div className="header">
+        <div className="menu">
       {['left'].map((anchor) => (
         <React.Fragment key={anchor}>
           <Button onClick={toggleDrawer(anchor, true)}><MenuRoundedIcon fontSize="large"/></Button>
@@ -73,6 +75,23 @@ export default function SwipeableTemporaryDrawer() {
           </SwipeableDrawer>
         </React.Fragment>
       ))}
+          <img src={Logo} alt="logo"/>
+      </div>
+      <div className="bigMenu">
+         
+          <h5>Donation</h5>
+          <h5>Search</h5>
+          <h5>Sign Up</h5>
+          <h5>Login</h5>
+       
+          
+         <img src={Logo} alt="logo"/>
+      </div>
+     
+
+
+
+
     </div>
   );
 }
