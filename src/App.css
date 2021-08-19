@@ -1,18 +1,15 @@
-
-.cust-contain{
+.cust-contain {
   margin: 8vh auto;
-  max-height: 600px;
-  height:110vh;
+  max-height: 660px;
+  height: 110vh;
   max-width: 800px;
   border-radius: 5px;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
-rgba(17, 17, 26, 0.1) 0px 8px 24px,
-rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
 
-@media screen and (max-width:960px) {
-  .cust-contain{
+@media screen and (max-width: 960px) {
+  .cust-contain {
     margin: 2vh auto;
   }
-
 }
