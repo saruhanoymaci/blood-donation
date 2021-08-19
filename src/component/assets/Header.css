@@ -1,3 +1,6 @@
+.header {
+  position: sticky;
+}
 .menu {
   display: none;
 }

@@ -75,7 +75,7 @@ export default function SwipeableTemporaryDrawer() {
             </SwipeableDrawer>
           </React.Fragment>
         ))}
-        <img src={Logo} alt="logo" />
+        <Link to="/">  <img src={Logo} alt="logo" /> </Link>
       </div>
       <div className="bigMenu">
 
