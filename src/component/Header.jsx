@@ -21,20 +21,15 @@ const useStyles = makeStyles({
     width: 'auto',
   },
 });
-
 export default function SwipeableTemporaryDrawer() {
   const classes = useStyles();
   const [state, setState] = React.useState({
-
     left: false,
-
   });
-
   const toggleDrawer = (anchor, open) => (event) => {
     if (event && event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
       return;
     }
-
     setState({ ...state, [anchor]: open });
   };
 
@@ -55,10 +50,8 @@ export default function SwipeableTemporaryDrawer() {
         ))}
       </List>
       <Divider />
-
     </div>
   );
-
   return (
     <div className="header">
       <div className="menu">
@@ -78,20 +71,12 @@ export default function SwipeableTemporaryDrawer() {
         <Link to="/">  <img src={Logo} alt="logo" /> </Link>
       </div>
       <div className="bigMenu">
-
         <Link to="/donation"> <h5>Donation</h5> </Link>
         <Link to="/search"> <h5>Search</h5> </Link>
         <Link to="/signup"> <h5>Sign Up</h5> </Link>
         <Link to="/login">  <h5>Login</h5></Link>
-
-
         <Link to="/">  <img src={Logo} alt="logo" /> </Link>
       </div>
-
-
-
-
-
     </div>
   );
 }
