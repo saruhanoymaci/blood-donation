@@ -33,8 +33,8 @@ function Signup() {
           </select>
           <select class="form-floating form-select mb-3" aria-label=".form-select-md example">
             <option selected>RH Factor</option>
-            <option value="1">RH (+)</option>
-            <option value="2">RH (-)</option>
+            <option value="+">RH (+)</option>
+            <option value="-">RH (-)</option>
           </select>
         </div>
         <div class="form-floating mb-3">

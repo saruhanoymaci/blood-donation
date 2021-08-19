@@ -1,6 +1,7 @@
 .cust-contain {
   margin: 8vh auto;
   max-height: 660px;
+  overflow-y: scroll;
   height: 110vh;
   max-width: 800px;
   border-radius: 5px;

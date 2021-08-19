@@ -6,6 +6,7 @@ import Donation from "./component/Donation";
 import Header from "./component/Header"
 import Signup from "./component/Signup"
 import Login from "./component/Login"
+import Home from "./component/Home"
 function App() {
   return (
     <div className="App">
@@ -14,7 +15,8 @@ function App() {
           <Router>
             <Header />
             <Switch>
-              <Route path="/" exact> <Donation /> </Route>
+              <Route path="/" exact> <Home /> </Route>
+              <Route path="/donation" > <Donation /> </Route>
               <Route path="/search"> <Search /> </Route>
               <Route path="/signup"><Signup /></Route>
               <Route path="/login"><Login /></Route>
