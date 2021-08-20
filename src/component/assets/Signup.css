@@ -1,5 +1,13 @@
 .signup {
   padding: 15px;
+  font-family: "Tenali Ramakrishna", sans-serif;
+}
+.signup input,
+.signup select,
+.signup label,
+.signup button {
+  font-size: 19px;
+  font-weight: 600;
 }
 .signup select:first-child {
   margin-right: 5px;
@@ -8,6 +16,18 @@
   background-color: #f3764a;
   color: white;
 }
+.signup input,
+.signup select,
+.signup button {
+  box-shadow: none !important;
+  border-bottom: 2px solid #f3764a !important;
+}
+.signup input:active,
+.signup select:active {
+  border: none !important;
+  box-shadow: none !important;
+}
+
 .signup .btn:active {
   opacity: 0.7;
   box-shadow: #f3764a !important;

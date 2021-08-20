@@ -3,7 +3,7 @@ import "./assets/Search.css"
 
 function Search() {
     return (
-        <div>
+        <div className="search">
             <h1>SEARCH</h1>
         </div>
     )

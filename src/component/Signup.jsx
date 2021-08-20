@@ -50,7 +50,7 @@ function Signup() {
           <label for="floatingPassword">Password Again</label>
         </div>
         <div className="mb-3">
-          <label >Two password must be same.</label>
+          <label ><b>Two password must be same</b>.</label>
         </div>
         <button type="submit" className="btn">Submit</button>
       </form>
