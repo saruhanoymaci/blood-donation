@@ -43,11 +43,13 @@ export default function SwipeableTemporaryDrawer() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
+        <Link to="/">  <img src={Logo} alt="logo" /> </Link>
         {['Donation', 'Search', 'SignUp', 'Login'].map((text) => (
           <ListItem button key={text}>
             <Link to={text}> <ListItemText primary={text} /> </Link>
           </ListItem>
         ))}
+
       </List>
       <Divider />
     </div>

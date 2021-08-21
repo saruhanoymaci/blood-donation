@@ -7,6 +7,7 @@ import Header from "./component/Header"
 import Signup from "./component/Signup"
 import Login from "./component/Login"
 import Home from "./component/Home"
+import Footer from "./component/Footer";
 function App() {
   return (
     <div className="App">
@@ -21,6 +22,7 @@ function App() {
               <Route path="/signup"><Signup /></Route>
               <Route path="/login"><Login /></Route>
             </Switch>
+            <Footer />
           </Router>
         </div>
       </div>
